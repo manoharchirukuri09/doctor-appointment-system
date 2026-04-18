@@ -1,0 +1,13 @@
+.wrap { display: flex; flex-direction: column; gap: 24px; }
+.section {}
+.label { font-size: 15px; font-weight: 600; color: var(--gray-800); margin-bottom: 12px; }
+.slots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.slot {
+  padding: 10px 6px; border-radius: var(--radius-md);
+  border: 1.5px solid var(--gray-200); background: var(--white);
+  font-size: 13px; font-weight: 500; color: var(--gray-700);
+  cursor: pointer; transition: all .2s var(--ease); text-align: center;
+}
+.slot:hover  { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+.slot.selected { background: var(--primary); color: #fff; border-color: var(--primary); }
+@media (max-width: 480px) { .slots { grid-template-columns: repeat(3, 1fr); } }

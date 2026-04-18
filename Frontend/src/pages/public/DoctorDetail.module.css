@@ -1,0 +1,33 @@
+.layout { display: grid; grid-template-columns: 1fr 420px; gap: 28px; align-items: start; }
+.doctorTop { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 24px; }
+.avatar { width: 100px; height: 100px; border-radius: var(--radius-lg); flex-shrink: 0; }
+.avatarFallback {
+  width: 100px; height: 100px; border-radius: var(--radius-lg);
+  background: var(--primary-light); color: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 40px; font-weight: 600; flex-shrink: 0;
+}
+.specialityBadge {
+  font-size: 12px; font-weight: 500; color: var(--primary);
+  text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px;
+}
+.name   { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--gray-900); margin-bottom: 4px; }
+.degree { font-size: 14px; color: var(--gray-600); margin-bottom: 2px; }
+.exp    { font-size: 13px; color: var(--gray-500); }
+.meta { display: flex; flex-direction: column; gap: 14px; padding: 20px 0; border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); margin-bottom: 20px; }
+.metaItem { display: flex; justify-content: space-between; align-items: center; }
+.metaLabel { font-size: 13px; color: var(--gray-500); }
+.metaValue { font-size: 14px; font-weight: 500; color: var(--gray-800); }
+.about {}
+.aboutTitle { font-size: 16px; font-weight: 600; color: var(--gray-900); margin-bottom: 8px; }
+.aboutText  { font-size: 14px; color: var(--gray-600); line-height: 1.7; }
+.bookTitle  { font-family: var(--font-display); font-size: 20px; font-weight: 600; margin-bottom: 20px; }
+.summary {
+  background: var(--gray-50); border-radius: var(--radius-md);
+  padding: 14px 16px; margin-top: 16px; display: flex; flex-direction: column; gap: 6px;
+  font-size: 14px; color: var(--gray-700);
+}
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .doctorTop { flex-direction: column; align-items: center; text-align: center; }
+}
