@@ -55,7 +55,47 @@ export default function Login() {
           Don't have an account?{' '}
           <Link to="/register" className={styles.link}>Create one free</Link>
         </p>
+
+        <div className={styles.demoCredentials}>
+          <div className={styles.demoCredentialsTitle}>Demo Credentials</div>
+          <div className={styles.demoCredentialsList}>
+            <div className={styles.demoCredentialItem}>
+              <span className={styles.demoLabel}>Admin:</span>
+              <button 
+                type="button"
+                className={styles.demoValue}
+                onClick={() => setForm({ email: 'admin@gmail.com', password: 'admin@523247' })}
+                title="Click to autofill"
+              >
+                admin@gmail.com / admin@523247
+              </button>
+            </div>
+            <div className={styles.demoCredentialItem}>
+              <span className={styles.demoLabel}>Doctor:</span>
+              <button 
+                type="button"
+                className={styles.demoValue}
+                onClick={() => setForm({ email: 'doctor1@gmail.com', password: 'doctor123' })}
+                title="Click to autofill"
+              >
+                doctor1@gmail.com / doctor123
+              </button>
+            </div>
+            <div className={styles.demoCredentialItem}>
+              <span className={styles.demoLabel}>Patient:</span>
+              <button 
+                type="button"
+                className={styles.demoValue}
+                onClick={() => setForm({ email: 'patient1@gmail.com', password: 'patient123' })}
+                title="Click to autofill"
+              >
+                patient1@gmail.com / patient123
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
+

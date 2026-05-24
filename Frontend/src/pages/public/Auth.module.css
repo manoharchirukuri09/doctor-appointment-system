@@ -20,3 +20,52 @@
 .footer { text-align: center; margin-top: 20px; font-size: 14px; color: var(--gray-500); }
 .link { color: var(--primary); font-weight: 500; }
 .link:hover { text-decoration: underline; }
+
+.demoCredentials {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+}
+.demoCredentialsTitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+  margin-bottom: 12px;
+}
+.demoCredentialsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.demoCredentialItem {
+  font-size: 13px;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.demoLabel {
+  font-weight: 600;
+  color: var(--gray-600);
+}
+.demoValue {
+  font-family: var(--font-mono, monospace);
+  font-size: 12px;
+  color: var(--primary);
+  background: var(--white);
+  padding: 4px 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-200);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.demoValue:hover {
+  background: var(--primary-50);
+  border-color: var(--primary-200);
+  transform: translateY(-1px);
+}
+
